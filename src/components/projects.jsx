@@ -34,7 +34,7 @@ export default function Projects({darkMode}){
                 {/* STICKY */}
                 <div className="overflow-hidden sticky top-20 h-[100vh]">
                     {/* SCROLL SECTION */}
-                    <motion.div style={{ x }} className="absolute height-[100%] lg:w-[700vw] w-[1500vw] will-change-transform justify-between flex align-center py-0 px-[5vw]">
+                    <motion.div style={{ x }} className="absolute height-[100%] top-10 lg:w-[700vw] w-[1500vw] will-change-transform justify-between flex align-center py-0 px-[5vw]">
 
                     
                     <h1 className={`text-[80px]  leading-[80.4px] min-w-[400px] uppercase -rotate-90 ${darkMode ? "text-coffee" : "text-verge-black"}`}>MY WORK</h1>

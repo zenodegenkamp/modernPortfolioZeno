@@ -1,3 +1,7 @@
+
+
+
+
 import React from "react";
 import { useRef, useEffect, useState } from "react";
 import frameOne from '../assets/frameOne.png';
@@ -26,22 +30,22 @@ export default function Projects({darkMode}){
     return (
         <section className="w-[100%]">
             {/* STICKY PARENT */}
-            <div ref={targetRef} className="h-[700vh] ">
+            <div ref={targetRef} className="lg:h-[700vh] h-[1500vh] ">
                 {/* STICKY */}
                 <div className="overflow-hidden sticky top-20 h-[100vh]">
                     {/* SCROLL SECTION */}
-                    <motion.div style={{ x }} className="absolute top-0 height-[100%] w-[700vw] will-change-transform justify-between flex align-center py-0 px-[5vw]">
+                    <motion.div style={{ x }} className="absolute top-20 height-[100%] lg:w-[700vw] w-[1500vw] will-change-transform justify-between flex align-center py-0 px-[5vw]">
 
                     
-                    <h1 className={`mt-20 font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase -rotate-90 ${darkMode ? "text-coffee" : "text-verge-black"}`}>MY WORK</h1>
-                    <a target="_blank" href="https://zeno-degenkamp.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '100%' }} src={portfolio} alt="Frame One" /></a>
-                    <a target="_blank" href="https://marvelous-fenglisu-f6d29b.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '100%' }} src={storygenerator} alt="Frame One" /></a>
-                    <a target="_blank" href="https://zingy-cassata-2ad8ad.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '100%' }} src={chatbot} alt="Frame One" /></a>
+                    <h1 className={`text-[80px]  leading-[80.4px] min-w-[400px] uppercase -rotate-90 ${darkMode ? "text-coffee" : "text-verge-black"}`}>MY WORK</h1>
+                    <a target="_blank" href="https://zeno-degenkamp.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg lg:h-[40vw] h-[100vw]" src={portfolio} alt="Frame One" /></a>
+                    <a target="_blank" href="https://marvelous-fenglisu-f6d29b.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg lg:h-[40vw] h-[100vw]"  src={storygenerator} alt="Frame One" /></a>
+                    <a target="_blank" href="https://zingy-cassata-2ad8ad.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg lg:h-[40vw] h-[100vw]"  src={chatbot} alt="Frame One" /></a>
                       
-                    <a target="_blank" href="https://codeconnect-react.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '100%' }} src={codeconnect} alt="Frame One" /></a>
-                    <a target="_blank" href="https://hidden-quiz-minigame.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '100%' }} src={minigame} alt="Frame One" /></a>
-                    <a target="_blank" href="https://travel-react-zeno.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '100%' }} src={travel} alt="Frame One" /></a>
-                    <a target="_blank" href="https://icon-ninja.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '100%' }} src={iconninja} alt="Frame One" /></a>
+                    <a target="_blank" href="https://codeconnect-react.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg lg:h-[40vw] h-[100vw]"  src={codeconnect} alt="Frame One" /></a>
+                    <a target="_blank" href="https://hidden-quiz-minigame.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg lg:h-[40vw] h-[100vw]"  src={minigame} alt="Frame One" /></a>
+                    <a target="_blank" href="https://travel-react-zeno.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg lg:h-[40vw] h-[100vw]"  src={travel} alt="Frame One" /></a>
+                    <a target="_blank" href="https://icon-ninja.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg lg:h-[40vw] h-[100vw]" src={iconninja} alt="Frame One" /></a>
 
 
                     </motion.div>
@@ -52,6 +56,14 @@ export default function Projects({darkMode}){
         </section>
     )
 }
+
+
+
+
+// hier was ik al beetje bezig style weggeheaald 
+
+
+
 
 
 // import React from "react";
@@ -82,22 +94,22 @@ export default function Projects({darkMode}){
 //     return (
 //         <section className="w-[100%]">
 //             {/* STICKY PARENT */}
-//             <div ref={targetRef} className="h-[700vh] ">
+//             <div ref={targetRef} className="h-[700vh]  ">
 //                 {/* STICKY */}
 //                 <div className="overflow-hidden sticky top-20 h-[100vh]">
 //                     {/* SCROLL SECTION */}
-//                     <motion.div style={{ x }} className="absolute top-0 height-[100%] w-[700vw] will-change-transform justify-between flex align-center py-0 px-[5vw]">
+//                     <motion.div style={{ x }} className="absolute top-0 height-[100%] w-[700vw]   will-change-transform justify-between flex align-center py-0 px-[5vw]">
 
                     
-//                     <h1 className={`font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase -rotate-90 ${darkMode ? "text-coffee" : "text-verge-black"}`}>MY WORK</h1>
-//                     <img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '80%' }} src={portfolio} alt="Frame One" />
-//                     <img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '100%' }} src={storygenerator} alt="Frame One" />
-//                     <img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '100%' }} src={chatbot} alt="Frame One" />
+//                     <h1 className={`font-bold lg:text-[100px] md:text-[80px] sm:text-[60px] text-[40px] uppercase -rotate-90 ${darkMode ? "text-coffee" : "text-verge-black"}`}>MY WORK</h1>
+//                     <a target="_blank" href="https://zeno-degenkamp.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg w-[80%]" src={portfolio} alt="Frame One" /></a>
+//                     <a target="_blank" href="https://marvelous-fenglisu-f6d29b.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg"  src={storygenerator} alt="Frame One" /></a>
+//                     <a target="_blank" href="https://zingy-cassata-2ad8ad.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '100%' }} src={chatbot} alt="Frame One" /></a>
                       
-//                     <img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '100%' }} src={codeconnect} alt="Frame One" />
-//                     <img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '100%' }} src={minigame} alt="Frame One" />
-//                     <img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '100%' }} src={travel} alt="Frame One" />
-//                     <img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '100%' }} src={iconninja} alt="Frame One" />
+//                     <a target="_blank" href="https://codeconnect-react.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '100%' }} src={codeconnect} alt="Frame One" /></a>
+//                     <a target="_blank" href="https://hidden-quiz-minigame.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '100%' }} src={minigame} alt="Frame One" /></a>
+//                     <a target="_blank" href="https://travel-react-zeno.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '100%' }} src={travel} alt="Frame One" /></a>
+//                     <a target="_blank" href="https://icon-ninja.netlify.app/"><img className="object-cover object-center shadow-xl transform transition-transform hover:shadow-2xl hover:-translate-y-2 rounded-lg" style={{ width: '90vw', height: '100%' }} src={iconninja} alt="Frame One" /></a>
 
 
 //                     </motion.div>
@@ -108,5 +120,3 @@ export default function Projects({darkMode}){
 //         </section>
 //     )
 // }
-
-

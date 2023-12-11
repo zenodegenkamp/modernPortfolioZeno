@@ -10,6 +10,8 @@ import Projects from './components/projects'
 import ProjectsCarousel from './components/projectCarousel'
 import Contact from './components/contact'
 import AnimatedCursor from "react-animated-cursor"
+import Model3d from './components/model3d'
+
 
 function App() {
 
@@ -63,6 +65,9 @@ function App() {
       />
       <HeroIntroTitle
         darkMode={darkMode}
+      />
+      <Model3d
+      darkMode={darkMode}
       />
       <Aboutme 
         darkMode={darkMode}
